@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 tvMensaje.setText("Hola GitHub!!");
+                Toast.makeText(MainActivity.this,"Se cambió el texto del TextView",Toast.LENGTH_LONG).show();
             }
         });
 
@@ -31,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 tvMensaje.setText("Hola Diplomado Android!!");
+                
             }
         });
     }
